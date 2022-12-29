@@ -217,12 +217,10 @@ header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 header nav ul li a {
+  margin-left: 20px;
   font-size: 1.8rem;
   color: #707070;
 }
@@ -237,8 +235,45 @@ header nav ul li a {
 }
 
 .header-title {
-  padding-right: 20px;
   font-size: 3.8rem;
   font-family: "Roboto", sans-serif;
+}
+
+#first-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.firstView-textWrap {
+  width: 46%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.firstView-textWrap-top {
+  font-size: 3.8rem;
+  font-family: "ヒラギノ明朝 Pro";
+}
+
+.firstView-textWrap-bottom {
+  font-size: 3.8rem;
+  font-family: "Zapfino";
+}
+
+.fv-img {
+  height: 800px;
 }
 /*# sourceMappingURL=main.css.map */

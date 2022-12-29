@@ -1,0 +1,25 @@
+#first-view {
+    display: flex;
+}
+
+.firstView-textWrap {
+    width: 46%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &-top {
+        font-size: 3.8rem;
+        font-family: "ヒラギノ明朝 Pro";
+    }
+
+    &-bottom {
+        font-size: 3.8rem;
+        font-family: "Zapfino";
+    }
+}
+.fv-img {
+    height: 800px;
+}
