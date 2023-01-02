@@ -200,9 +200,28 @@ body {
 .inner {
   width: 85%;
   margin: 0 auto;
-  padding: 290px;
+  padding-top: 260px;
 }
 
+.section-title {
+  margin-bottom: 20px;
+  color: #707070;
+  font-size: 1.8rem;
+  font-family: "Roboto";
+  position: relative;
+}
+
+.section-title::after {
+  position: absolute;
+  top: calc(50% - 1px);
+  width: 100px;
+  height: 1px;
+  margin-left: 22px;
+  content: "";
+  border-top: 1px solid #707070;
+}
+
+/* mixin */
 header {
   width: 100%;
   position: absolute;
@@ -266,14 +285,49 @@ header nav ul li a {
 .firstView-textWrap-top {
   font-size: 3.8rem;
   font-family: "ヒラギノ明朝 Pro";
+  margin-bottom: 50px;
+  letter-spacing: 3.8px;
+}
+
+@media (max-width: 1024px) {
+  .firstView-textWrap-top {
+    font-size: 2.5vw;
+  }
 }
 
 .firstView-textWrap-bottom {
   font-size: 3.8rem;
   font-family: "Zapfino";
+  letter-spacing: 3.8px;
+}
+
+@media (max-width: 1024px) {
+  .firstView-textWrap-bottom {
+    font-size: 2.5vw;
+  }
 }
 
 .fv-img {
-  height: 800px;
+  width: 65%;
+  height: auto;
+}
+
+.fv-img img {
+  width: 100%;
+  height: auto;
+}
+
+#conceput {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a193861f), color-stop(45%, #a193861f), color-stop(45%, #a1938689));
+  background: linear-gradient(180deg, #a193861f 0%, #a193861f 45%, #a1938689 45% #a1938689 100%);
+}
+
+.concept-imgWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */

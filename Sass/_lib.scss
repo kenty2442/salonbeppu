@@ -11,5 +11,45 @@ body {
 .inner {
     width: 85%;
     margin: 0 auto;
-    padding: 290px;
+    padding-top: 260px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    color: #707070;
+    font-size: 1.8rem;
+    font-family: "Roboto";
+    position: relative;
+
+    &::after {
+        position: absolute;
+        top: calc(50% - 1px);
+        width: 100px;
+        height: 1px;
+        margin-left: 22px;
+        content: "";
+        border-top: 1px solid #707070;
+    }
+}
+
+/* mixin */
+// PC画面サイズ以上
+@mixin pc {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
+
+// タブレット画面
+@mixin tab {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+// スマホ画面
+@mixin sp {
+    @media (max-width: 599px) {
+        @content;
+    }
 }
