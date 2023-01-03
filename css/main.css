@@ -323,11 +323,49 @@ header nav ul li a {
 }
 
 .concept-imgWrap {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.concept-imgTop {
+  width: 60%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.concept-imgBottom {
+  width: 40%;
+  height: auto;
+}
+
+.concept-textWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+  color: #ffffff;
+}
+
+.concept-textWrap-title {
+  margin-right: 60px;
+  font-size: 4rem;
+  font-family: "ヒラギノ明朝 Pro", W3;
+  width: 100%;
+}
+
+.concept-textWrap-content {
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: "ヒラギノ角ゴ Pro";
 }
 /*# sourceMappingURL=main.css.map */
