@@ -1,0 +1,34 @@
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.menu-item {
+    flex-direction: column;
+    width: 275px;
+    font-family: "Roboto Mono for Powerline", Regular;
+}
+
+.menu-item-img {
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.menu-item__title {
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.menu-item__text {
+    margin-bottom: 35px;
+    font-size: 1.6rem;
+}
+
+.menu-item__price {
+    text-align: right;
+    font-size: 1.6rem;
+}
