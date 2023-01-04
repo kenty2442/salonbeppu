@@ -447,4 +447,59 @@ header nav ul li a {
   font-size: 2.4rem;
   font-family: "Roboto Mono for Powerline", Bold;
 }
+
+.footer-itemsWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 32px;
+  position: relative;
+}
+
+.footer-itemsWrap::before {
+  content: "";
+  border-top: 1px solid #70707036;
+  width: 100%;
+  position: absolute;
+  top: -80px;
+}
+
+.footer-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-item__title {
+  color: #7070704d;
+  font-size: 3.2rem;
+}
+
+.footer-item__icons {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.footer-item__icons i {
+  margin-right: 10px;
+}
+
+.footer-reserve {
+  font-size: 1.2rem;
+  font-family: "Roboto Mono for Powerline";
+  color: #707070;
+  background-color: inherit;
+  border-color: #707070;
+  height: 37px;
+  width: 10vw;
+}
 /*# sourceMappingURL=main.css.map */
