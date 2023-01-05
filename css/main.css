@@ -203,6 +203,12 @@ body {
   padding-top: 260px;
 }
 
+@media only screen and (max-width: 910px) {
+  .inner {
+    padding-top: 60px;
+  }
+}
+
 .section-title {
   margin-bottom: 20px;
   color: #707070;
@@ -221,24 +227,53 @@ body {
   border-top: 1px solid #707070;
 }
 
-/* mixin */
+.pc-img {
+  display: block;
+}
+
+@media only screen and (max-width: 910px) {
+  .pc-img {
+    display: none;
+  }
+}
+
+.sp-img {
+  display: none;
+}
+
+@media only screen and (max-width: 910px) {
+  .sp-img {
+    display: block;
+  }
+}
+
 header {
   width: 100%;
   position: absolute;
   padding: 45px 70px;
 }
 
-header nav {
-  width: 45%;
+@media only screen and (max-width: 910px) {
+  header {
+    padding: 25px 20px;
+    background-color: #fff;
+    z-index: 10;
+  }
 }
 
-header nav ul {
+@media only screen and (max-width: 910px) {
+  nav {
+    display: none;
+  }
+}
+
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header nav ul li a {
+nav ul li a {
   margin-left: 20px;
   font-size: 1.8rem;
   color: #707070;
@@ -258,10 +293,22 @@ header nav ul li a {
   font-family: "Roboto", sans-serif;
 }
 
+@media only screen and (max-width: 910px) {
+  .header-title {
+    font-size: 2.2rem;
+  }
+}
+
 #first-view {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 910px) {
+  #first-view {
+    position: relative;
+  }
 }
 
 .firstView-textWrap {
@@ -282,16 +329,30 @@ header nav ul li a {
           flex-direction: column;
 }
 
+@media only screen and (max-width: 910px) {
+  .firstView-textWrap {
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 5vh);
+    color: #fff;
+    text-shadow: 0px 3px 16px #000000;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .firstView-textWrap-top {
   font-size: 3.8rem;
-  font-family: "ヒラギノ明朝 Pro";
+  font-family: "ヒラギノ明朝 Pro", "Regular";
   margin-bottom: 50px;
   letter-spacing: 3.8px;
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 910px) {
   .firstView-textWrap-top {
-    font-size: 2.5vw;
+    font-size: 6vw;
   }
 }
 
@@ -301,25 +362,40 @@ header nav ul li a {
   letter-spacing: 3.8px;
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 910px) {
   .firstView-textWrap-bottom {
-    font-size: 2.5vw;
+    font-size: 4.5vw;
   }
 }
 
 .fv-img {
-  width: 65%;
+  width: 54%;
   height: auto;
+}
+
+@media only screen and (max-width: 910px) {
+  .fv-img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .fv-img img {
   width: 100%;
   height: auto;
+  vertical-align: top;
 }
 
 #conceput {
   background: -webkit-gradient(linear, left top, left bottom, from(#a193861f), color-stop(45%, #a193861f), color-stop(45%, #a1938689));
   background: linear-gradient(180deg, #a193861f 0%, #a193861f 45%, #a1938689 45% #a1938689 100%);
+}
+
+@media only screen and (max-width: 910px) {
+  #conceput {
+    background: -webkit-gradient(linear, left top, left bottom, from(#a193861f), color-stop(25%, #a193861f), color-stop(25%, #a1938689));
+    background: linear-gradient(180deg, #a193861f 0%, #a193861f 25%, #a1938689 25% #a1938689 100%);
+  }
 }
 
 .concept-imgWrap {
@@ -333,10 +409,23 @@ header nav ul li a {
   margin-bottom: 70px;
 }
 
+@media only screen and (max-width: 910px) {
+  .concept-imgWrap {
+    margin-bottom: 50px;
+  }
+}
+
 .concept-imgTop {
   width: 60%;
   height: auto;
   margin-right: 20px;
+}
+
+@media only screen and (max-width: 910px) {
+  .concept-imgTop {
+    width: 50%;
+    height: auto;
+  }
 }
 
 .concept-imgBottom {
@@ -344,29 +433,58 @@ header nav ul li a {
   height: auto;
 }
 
+@media only screen and (max-width: 910px) {
+  .concept-imgBottom {
+    width: 50%;
+    height: auto;
+  }
+}
+
 .concept-textWrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin: 0 auto;
-  width: 80%;
+  padding-bottom: 30px;
+  max-width: 950px;
   color: #ffffff;
 }
 
+@media only screen and (max-width: 910px) {
+  .concept-textWrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
 .concept-textWrap-title {
-  margin-right: 60px;
+  white-space: nowrap;
   font-size: 4rem;
-  font-family: "ヒラギノ明朝 Pro", W3;
-  width: 100%;
+  font-family: "ヒラギノ明朝 Pro", "W3";
+  letter-spacing: 16px;
+}
+
+@media only screen and (max-width: 910px) {
+  .concept-textWrap-title {
+    font-size: 2rem;
+    letter-spacing: 1.6px;
+  }
 }
 
 .concept-textWrap-content {
-  width: 100%;
   font-size: 1.6rem;
   font-family: "ヒラギノ角ゴ Pro";
+}
+
+@media only screen and (max-width: 910px) {
+  .concept-textWrap-content {
+    width: 100%;
+    margin: 20px 0 60px;
+    letter-spacing: 1.6px;
+  }
 }
 
 .menu-items {
@@ -380,6 +498,18 @@ header nav ul li a {
   margin-bottom: 70px;
 }
 
+@media only screen and (max-width: 910px) {
+  .menu-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .menu-item {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -387,6 +517,14 @@ header nav ul li a {
           flex-direction: column;
   width: 275px;
   font-family: "Roboto Mono for Powerline", Regular;
+}
+
+@media only screen and (max-width: 910px) {
+  .menu-item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+  }
 }
 
 .menu-item-img {
@@ -399,6 +537,12 @@ header nav ul li a {
   margin-bottom: 35px;
   text-align: center;
   font-size: 3rem;
+}
+
+@media only screen and (max-width: 910px) {
+  .menu-item__title {
+    text-align: left;
+  }
 }
 
 .menu-item__text {
@@ -414,6 +558,8 @@ header nav ul li a {
 #access {
   background: #a193861f;
   padding-bottom: 70px;
+  overflow: hidden;
+  position: relative;
 }
 
 .access-contentWrap {
@@ -427,9 +573,26 @@ header nav ul li a {
   background: #d0c5ba;
 }
 
+@media only screen and (max-width: 910px) {
+  .access-contentWrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto;
+  }
+}
+
 .access-content {
   margin-left: 8vw;
   margin-top: 100px;
+}
+
+@media only screen and (max-width: 910px) {
+  .access-content {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
 }
 
 .access-content ul li {
@@ -446,6 +609,24 @@ header nav ul li a {
   font-weight: bold;
   font-size: 2.4rem;
   font-family: "Roboto Mono for Powerline", Bold;
+}
+
+.access-map {
+  width: 60%;
+}
+
+@media only screen and (max-width: 910px) {
+  .access-map {
+    width: 100%;
+    height: 230px;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  footer {
+    padding-top: 155px;
+    padding-bottom: 20px;
+  }
 }
 
 .footer-itemsWrap {
@@ -467,6 +648,24 @@ header nav ul li a {
   top: -80px;
 }
 
+@media only screen and (max-width: 910px) {
+  .footer-itemsWrap::before {
+    top: -130px;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .footer-itemsWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .footer-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -484,6 +683,12 @@ header nav ul li a {
   font-size: 3.2rem;
 }
 
+@media only screen and (max-width: 910px) {
+  .footer-item__title {
+    font-size: 1.8rem;
+  }
+}
+
 .footer-item__icons {
   margin-left: 20px;
   margin-right: 10px;
@@ -498,8 +703,18 @@ header nav ul li a {
   font-family: "Roboto Mono for Powerline";
   color: #707070;
   background-color: inherit;
-  border-color: #707070;
+  border-color: #d6d2d2;
   height: 37px;
   width: 10vw;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 910px) {
+  .footer-reserve {
+    width: 185px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding: 10px 40px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

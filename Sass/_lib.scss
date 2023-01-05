@@ -12,6 +12,10 @@ body {
     width: 85%;
     margin: 0 auto;
     padding-top: 260px;
+
+    @media only screen and (max-width: 910px) {
+        padding-top: 60px;
+    }
 }
 
 .section-title {
@@ -32,24 +36,18 @@ body {
     }
 }
 
-/* mixin */
-// PC画面サイズ以上
-@mixin pc {
-    @media (min-width: 1025px) {
-        @content;
+.pc-img {
+    display: block;
+
+    @media only screen and (max-width: 910px) {
+        display: none;
     }
 }
 
-// タブレット画面
-@mixin tab {
-    @media (max-width: 1024px) {
-        @content;
-    }
-}
+.sp-img {
+    display: none;
 
-// スマホ画面
-@mixin sp {
-    @media (max-width: 599px) {
-        @content;
+    @media only screen and (max-width: 910px) {
+        display: block;
     }
 }

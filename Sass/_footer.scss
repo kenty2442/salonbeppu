@@ -1,3 +1,10 @@
+footer {
+    @media only screen and (max-width: 910px) {
+        padding-top: 155px;
+        padding-bottom: 20px;
+    }
+}
+
 .footer-itemsWrap {
     display: flex;
     justify-content: space-between;
@@ -10,6 +17,15 @@
         width: 100%;
         position: absolute;
         top: -80px;
+
+        @media only screen and (max-width: 910px) {
+            top: -130px;
+        }
+    }
+
+    @media only screen and (max-width: 910px) {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 
@@ -22,6 +38,10 @@
 .footer-item__title {
     color: #7070704d;
     font-size: 3.2rem;
+
+    @media only screen and (max-width: 910px) {
+        font-size: 1.8rem;
+    }
 }
 
 .footer-item__icons {
@@ -38,7 +58,16 @@
     font-family: "Roboto Mono for Powerline";
     color: #707070;
     background-color: inherit;
-    border-color: #707070;
+    border-color: #d6d2d2;
     height: 37px;
     width: 10vw;
+
+    cursor: pointer;
+
+    @media only screen and (max-width: 910px) {
+        width: 185px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        padding: 10px 40px;
+    }
 }
