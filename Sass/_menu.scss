@@ -3,12 +3,23 @@
     justify-content: space-between;
     width: 100%;
     margin-bottom: 70px;
+
+    @media only screen and (max-width: 910px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .menu-item {
     flex-direction: column;
     width: 275px;
     font-family: "Roboto Mono for Powerline", Regular;
+
+    @media only screen and (max-width: 910px) {
+        width: 100%;
+        height: auto;
+        margin-bottom: 60px;
+    }
 }
 
 .menu-item-img {
@@ -21,6 +32,10 @@
     margin-bottom: 35px;
     text-align: center;
     font-size: 3rem;
+
+    @media only screen and (max-width: 910px) {
+        text-align: left;
+    }
 }
 
 .menu-item__text {

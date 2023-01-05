@@ -3,18 +3,25 @@ header {
     position: absolute;
     padding: 45px 70px;
 
-    nav {
-        width: 45%;
+    @media only screen and (max-width: 910px) {
+        padding: 25px 20px;
+        background-color: #fff;
+        z-index: 10;
+    }
+}
 
-        ul {
-            display: flex;
+nav {
+    @media only screen and (max-width: 910px) {
+        display: none;
+    }
+    ul {
+        display: flex;
 
-            li {
-                a {
-                    margin-left: 20px;
-                    font-size: 1.8rem;
-                    color: #707070;
-                }
+        li {
+            a {
+                margin-left: 20px;
+                font-size: 1.8rem;
+                color: #707070;
             }
         }
     }
@@ -28,4 +35,8 @@ header {
 .header-title {
     font-size: 3.8rem;
     font-family: "Roboto", sans-serif;
+
+    @media only screen and (max-width: 910px) {
+        font-size: 2.2rem;
+    }
 }
