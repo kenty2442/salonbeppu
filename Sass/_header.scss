@@ -117,7 +117,7 @@ header {
     position: fixed;
     bottom: 100%;
     left: 0;
-    z-index: 80;
+    z-index: 20;
     background-color: #fff;
     transition: all 0.7s;
 
@@ -141,8 +141,8 @@ header {
                     content: "";
                     width: 7px;
                     height: 7px;
-                    border-top: solid 2px #ffffff;
-                    border-right: solid 2px #ffffff;
+                    border-top: solid 2px #707070;
+                    border-right: solid 2px #707070;
                     transform: rotate(45deg);
                     position: absolute;
                     right: 11px;
