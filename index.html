@@ -17,7 +17,7 @@
                 <div class="header-title">
                     <a href="index.html">SALON BEPPU</a>
                 </div>
-                <nav>
+                <div class="header-menu pc-only">
                     <ul>
                         <li>
                             <a href="#menu">MENU</a>
@@ -32,7 +32,28 @@
                             <a href="#reseve">RESERVE</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
+                <div class="header-hamburger sp-only">
+                    <input type="checkbox" id="menu-btn-check">
+                    <label for="menu-btn-check" class="menu-btn">
+                        <span></span>
+                    </label>
+                    <div class="hamburger-content">
+                        <ul>
+                            <li>
+                                <a href="#menu">MENU</a>
+                            </li>
+                            <li>
+                                <a href="#concept">CONCEPT</a>
+                            </li>
+                            <li>
+                                <a href="#access">ACCESS</a>
+                            </li>
+                            <li>
+                                <a href="#reserve">RESERVE</a>
+                            </li>
+                        </ul>
+                </div>
             </div>
         </header>
 
@@ -44,9 +65,9 @@
                     <div class="firstView-textWrap-bottom">We need Hair.</div>
                 </div>
                 <div class="fv-img">
-                    <img class="pc-img" src="./img/component.png" />
+                    <img class="pc-only" src="./img/component.png" />
                     <img
-                        class="sp-img"
+                        class="sp-only"
                         src="./img/Blond woman with long curly beautiful hair.png"
                     />
                 </div>
