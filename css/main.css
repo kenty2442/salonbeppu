@@ -190,6 +190,7 @@ select {
 /* 共通部分 */
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
